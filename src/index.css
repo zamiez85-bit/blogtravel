@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-display: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-pastel-green-50: #F3FDF5;
+  --color-pastel-green-100: #e5f3eb;
+  --color-pastel-green-200: #cae7d6;
+  --color-pastel-green-300: #a3d4ba;
+  --color-pastel-green-400: #74ba94;
+  --color-pastel-green-500: #4da073;
+  --color-pastel-green-600: #3b8259;
+  --color-pastel-green-700: #306948;
+  
+  --color-pastel-purple-50: #faf7fc;
+  --color-pastel-purple-100: #f4ecfa;
+  --color-pastel-purple-200: #e8d9f4;
+  --color-pastel-purple-300: #d6bce7;
+  --color-pastel-purple-400: #be99d8;
+  --color-pastel-purple-500: #9333ea;
+  --color-pastel-purple-600: #7e22ce;
+  --color-pastel-purple-700: #6b21a8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F3FDF5;
+  color: #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
